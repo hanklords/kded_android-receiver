@@ -1,0 +1,12 @@
+[Global]
+IconName=phone
+Comment=Android Remote notification
+Comment[fr]=Notification Android
+
+[Event/notification]
+Name=Notification received
+Name[fr]=Notification reçue
+Comment=You received a notification from an Android device
+Comment[fr]=Vous avez reçu une notification d'un appareil Android
+Sound=KDE-Sys-App-Message.ogg
+Action=Popup|Sound

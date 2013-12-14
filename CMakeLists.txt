@@ -1,0 +1,12 @@
+project(kandroid-receiver)
+find_package(KDE4 REQUIRED)
+include(KDE4Defaults)
+include_directories(${KDE4_INCLUDES})
+
+kde4_add_library(kded_kandroid-receiver MODULE kandroid-receiver.cpp)
+kde4_add_executable(kandroid-receiver main.cpp kandroid-receiver.cpp)
+target_link_libraries(kded_kandroid-receiver  ${KDE4_KDEUI_LIBS} ${QT_QTNETWORK_LIBRARY})
+target_link_libraries(kandroid-receiver  ${KDE4_KDEUI_LIBS} ${QT_QTNETWORK_LIBRARY})
+install(TARGETS kded_kandroid-receiver  DESTINATION ${PLUGIN_INSTALL_DIR} )
+install(FILES kandroid-receiver.desktop DESTINATION ${SERVICES_INSTALL_DIR}/kded)
+install(FILES kandroid-receiver.notifyrc DESTINATION ${DATA_INSTALL_DIR}/kandroid-receiver)
