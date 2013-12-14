@@ -11,4 +11,4 @@ Build
     make
     make install # As root
     
-It will be add a notification configurable in systemsettings and it will be launched automatically at KDE launch.
+It will add a notification configurable in systemsettings and it will be launched automatically at KDE launch.
