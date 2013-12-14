@@ -4,5 +4,4 @@ Comment=kandroid-receiver
 Type=Service
 X-KDE-ServiceTypes=KDEDModule
 X-KDE-Library=kandroid-receiver
-X-KDE-DBus-ModuleName=kandroid-receiver
 X-KDE-Kded-autoload=true
