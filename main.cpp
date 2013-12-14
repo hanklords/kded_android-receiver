@@ -12,8 +12,6 @@ int main(int argc, char **argv) {
     KAboutData about = aboutData();
     KCmdLineArgs::init(argc, argv, &about);
     KApplication a;
-//    KComponentData kcompdata(&aboutData);
-//    QCoreApplication a(argc, argv);
     KAndroidReceiver w;
 
     return a.exec();
