@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=kandroid-receiver
-Comment=kandroid-receiver
+Comment=Android Remote notification
 Type=Service
 X-KDE-ServiceTypes=KDEDModule
 X-KDE-Library=kandroid-receiver
