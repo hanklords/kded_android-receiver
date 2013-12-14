@@ -114,7 +114,10 @@ void KAndroidReceiver::receiveMessage(char *version, char *device_id, char *noti
         version, device_id, notification_id, event_type, data, event_contents
     );
     
-    KNotification::event("notification", QString::fromUtf8(event_contents));
+    KNotification *notification = new KNotification("notification");
+    notification->setComponentData( KAndroidReceiverFactory::componentData() );
+    notification->setText(QString::fromUtf8(event_contents));
+    notification->sendEvent();
 }
 
 #include "kandroid-receiver.moc"
