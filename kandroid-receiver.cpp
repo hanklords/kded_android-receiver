@@ -110,9 +110,9 @@ void KAndroidReceiver::parseMessage(QByteArray* datagram) {
 }
 
 void KAndroidReceiver::receiveMessage(char *version, char *device_id, char *notification_id, event_types event_type, char *data, char *event_contents) {
-    printf("version: %s device_id: %s notification_id: %s event_type: %i, data: %s event_contents: %s\n",
+    /*printf("version: %s device_id: %s notification_id: %s event_type: %i, data: %s event_contents: %s\n",
         version, device_id, notification_id, event_type, data, event_contents
-    );
+    );*/
     
     KNotification *notification = new KNotification("notification");
     notification->setComponentData( KAndroidReceiverFactory::componentData() );
